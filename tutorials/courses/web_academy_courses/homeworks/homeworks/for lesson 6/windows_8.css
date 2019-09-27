@@ -1,0 +1,98 @@
+@import 'styles/grid.css';
+@import 'styles/basic.css';
+
+.content__wrapper {
+	max-width: 820px;
+	width: 100%;
+	max-height: 100%;
+	margin: 0 auto;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.window__header {
+	padding: 0.5rem;
+}
+
+.items__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.item {
+	height: 150px;
+	padding: 0.5rem;
+}
+
+.item__content {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.item__content_1 {
+	background: #3387ea;
+}
+
+.item__content_2 {
+	background: #f9be3e;
+}
+
+.item__content_3 {
+	background: #d3573e;
+}
+
+.item__content_4 {
+	background: #59b0e2;
+}
+
+.item__content_5 {
+	background: #33af95;
+}
+
+.item__content_6 {
+	background: #86a73f;
+}
+
+.item__content_7 {
+	background: #151a26;
+}
+
+.item__content_8 {
+	background: #7e5b8c;
+}
+
+.item__icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.item__title {
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+	padding: 0.5rem
+}
+
+.item__blog {
+	display: flex;
+}
+
+.blog__image {
+	background: url(./assets/images/blog-image.png);
+	flex-basis: 30%;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.blog__title {
+	flex-basis: 70%;
+	padding: 0.5rem;
+}

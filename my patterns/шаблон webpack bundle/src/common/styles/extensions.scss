@@ -1,0 +1,44 @@
+// extensions 
+%wrapper-centered {
+    width: $wrapper-width;
+    margin: $margin-centered;
+}
+
+%padding-margin-reset {
+    margin: 0;
+    padding: 0;
+}
+
+%border-outline-none {
+    border: none;
+    outline: none;
+}
+
+%absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%absolute-center-vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%absolute-center-horizontal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+%visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+%hidden {
+    opacity: 0;
+    visibility: hidden;
+}

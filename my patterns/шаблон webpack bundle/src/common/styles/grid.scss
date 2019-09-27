@@ -1,0 +1,640 @@
+// grid styles and classes
+[class*='col-'] {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+// .grid-container {
+//     display: flex;
+//     justify-content: flex-start;
+//     flex-wrap: wrap;
+//     height: 100%;
+// }
+// .flex-grow {
+//     flex-grow: 1;
+// }
+// .flex-container > [class*='col-']:last-child {
+//     margin-right: auto;
+// }
+// .row-reverse {
+//     flex-direction: row-reverse;
+// }
+// .column {
+//     flex-direction: column;
+// }
+// .column-center {
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// original
+.col-1 {
+    flex-basis: 8.333333%;
+}
+
+.col-offset-1 {
+    margin-left: 8.333333%;
+}
+
+.col-2 {
+    flex-basis: 16.666666%;
+}
+
+.col-offset-2 {
+    margin-left: 16.666666%;
+}
+
+.col-3 {
+    flex-basis: 24.999999%;
+}
+
+.col-offset-3 {
+    margin-left: 24.999999%;
+}
+
+.col-4 {
+    flex-basis: 33.333332%;
+}
+
+.col-offset-4 {
+    margin-left: 33.333332%;
+}
+
+.col-5 {
+    flex-basis: 41.666664999999995%;
+}
+
+.col-offset-5 {
+    margin-left: 41.666664999999995%;
+}
+
+.col-6 {
+    flex-basis: 49.999998%;
+}
+
+.col-offset-6 {
+    margin-left: 49.999998%;
+}
+
+.col-7 {
+    flex-basis: 58.333331%;
+}
+
+.col-offset-7 {
+    margin-left: 58.333331%;
+}
+
+.col-8 {
+    flex-basis: 66.666664%;
+}
+
+.col-offset-8 {
+    margin-left: 66.666664%;
+}
+
+.col-9 {
+    flex-basis: 74.999997%;
+}
+
+.col-offset-9 {
+    margin-left: 74.999997%;
+}
+
+.col-10 {
+    flex-basis: 83.33332999999999%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33332999999999%;
+}
+
+.col-11 {
+    flex-basis: 91.666663%;
+}
+
+.col-offset-11 {
+    margin-left: 91.666663%;
+}
+
+.col-12 {
+    flex-basis: 99.999996%;
+}
+
+.col-offset-12 {
+    margin-left: 99.999996%;
+}
+
+//laptops-lg
+@media screen and (max-width: 1440px) {
+    .col-laptop-lg-1 {
+        flex-basis: 8.333333%;
+    }
+
+    .col-offset-laptop-lg-1 {
+        margin-left: 8.333333%;
+    }
+
+    .col-laptop-lg-2 {
+        flex-basis: 16.666666%;
+    }
+
+    .col-offset-laptop-lg-2 {
+        margin-left: 16.666666%;
+    }
+
+    .col-laptop-lg-3 {
+        flex-basis: 24.999999%;
+    }
+
+    .col-offset-laptop-lg-3 {
+        margin-left: 24.999999%;
+    }
+
+    .col-laptop-lg-4 {
+        flex-basis: 33.333332%;
+    }
+
+    .col-offset-laptop-lg-4 {
+        margin-left: 33.333332%;
+    }
+
+    .col-laptop-lg-5 {
+        flex-basis: 41.666664999999995%;
+    }
+
+    .col-offset-laptop-lg-5 {
+        margin-left: 41.666664999999995%;
+    }
+
+    .col-laptop-lg-6 {
+        flex-basis: 49.999998%;
+    }
+
+    .col-offset-laptop-lg-6 {
+        margin-left: 49.999998%;
+    }
+
+    .col-laptop-lg-7 {
+        flex-basis: 58.333331%;
+    }
+
+    .col-offset-laptop-lg-7 {
+        margin-left: 58.333331%;
+    }
+
+    .col-laptop-lg-8 {
+        flex-basis: 66.666664%;
+    }
+
+    .col-offset-laptop-lg-8 {
+        margin-left: 66.666664%;
+    }
+
+    .col-laptop-lg-9 {
+        flex-basis: 74.999997%;
+    }
+
+    .col-offset-laptop-lg-9 {
+        margin-left: 74.999997%;
+    }
+
+    .col-laptop-lg-10 {
+        flex-basis: 83.33332999999999%;
+    }
+
+    .col-offset-laptop-lg-10 {
+        margin-left: 83.33332999999999%;
+    }
+
+    .col-laptop-lg-11 {
+        flex-basis: 91.666663%;
+    }
+
+    .col-offset-laptop-lg-11 {
+        margin-left: 91.666663%;
+    }
+
+    .col-laptop-lg-12 {
+        flex-basis: 99.999996%;
+    }
+
+    .col-offset-laptop-lg-12 {
+        margin-left: 99.999996%;
+    }
+
+    .laptop-lg-hidden {
+        display: none !important;
+    }
+}
+
+//laptops-md
+@media screen and (max-width: 1200px) {
+    .col-laptop-md-1 {
+        flex-basis: 8.333333%;
+    }
+
+    .col-offset-laptop-md-1 {
+        margin-left: 8.333333%;
+    }
+
+    .col-laptop-md-2 {
+        flex-basis: 16.666666%;
+    }
+
+    .col-offset-laptop-md-2 {
+        margin-left: 16.666666%;
+    }
+
+    .col-laptop-md-3 {
+        flex-basis: 24.999999%;
+    }
+
+    .col-offset-laptop-md-3 {
+        margin-left: 24.999999%;
+    }
+
+    .col-laptop-md-4 {
+        flex-basis: 33.333332%;
+    }
+
+    .col-offset-laptop-md-4 {
+        margin-left: 33.333332%;
+    }
+
+    .col-laptop-md-5 {
+        flex-basis: 41.666664999999995%;
+    }
+
+    .col-offset-laptop-md-5 {
+        margin-left: 41.666664999999995%;
+    }
+
+    .col-laptop-md-6 {
+        flex-basis: 49.999998%;
+    }
+
+    .col-offset-laptop-md-6 {
+        margin-left: 49.999998%;
+    }
+
+    .col-laptop-md-7 {
+        flex-basis: 58.333331%;
+    }
+
+    .col-offset-laptop-md-7 {
+        margin-left: 58.333331%;
+    }
+
+    .col-laptop-md-8 {
+        flex-basis: 66.666664%;
+    }
+
+    .col-offset-laptop-md-8 {
+        margin-left: 66.666664%;
+    }
+
+    .col-laptop-md-9 {
+        flex-basis: 74.999997%;
+    }
+
+    .col-offset-laptop-md-9 {
+        margin-left: 74.999997%;
+    }
+
+    .col-laptop-md-10 {
+        flex-basis: 83.33332999999999%;
+    }
+
+    .col-offset-laptop-md-10 {
+        margin-left: 83.33332999999999%;
+    }
+
+    .col-laptop-md-11 {
+        flex-basis: 91.666663%;
+    }
+
+    .col-offset-laptop-md-11 {
+        margin-left: 91.666663%;
+    }
+
+    .col-laptop-md-12 {
+        flex-basis: 99.999996%;
+    }
+
+    .col-offset-laptop-md-12 {
+        margin-left: 99.999996%;
+    }
+
+    .laptop-md-hidden {
+        display: none !important;
+    }
+}
+
+//laptops-sm
+@media screen and (max-width: 992px) {
+    .col-laptop-sm-1 {
+        flex-basis: 8.333333%;
+    }
+
+    .col-offset-laptop-sm-1 {
+        margin-left: 8.333333%;
+    }
+
+    .col-laptop-sm-2 {
+        flex-basis: 16.666666%;
+    }
+
+    .col-offset-laptop-sm-2 {
+        margin-left: 16.666666%;
+    }
+
+    .col-laptop-sm-3 {
+        flex-basis: 24.999999%;
+    }
+
+    .col-offset-laptop-sm-3 {
+        margin-left: 24.999999%;
+    }
+
+    .col-laptop-sm-4 {
+        flex-basis: 33.333332%;
+    }
+
+    .col-offset-laptop-sm-4 {
+        margin-left: 33.333332%;
+    }
+
+    .col-laptop-sm-5 {
+        flex-basis: 41.666664999999995%;
+    }
+
+    .col-offset-laptop-sm-5 {
+        margin-left: 41.666664999999995%;
+    }
+
+    .col-laptop-sm-6 {
+        flex-basis: 49.999998%;
+    }
+
+    .col-offset-laptop-sm-6 {
+        margin-left: 49.999998%;
+    }
+
+    .col-laptop-sm-7 {
+        flex-basis: 58.333331%;
+    }
+
+    .col-offset-laptop-sm-7 {
+        margin-left: 58.333331%;
+    }
+
+    .col-laptop-sm-8 {
+        flex-basis: 66.666664%;
+    }
+
+    .col-offset-laptop-sm-8 {
+        margin-left: 66.666664%;
+    }
+
+    .col-laptop-sm-9 {
+        flex-basis: 74.999997%;
+    }
+
+    .col-offset-laptop-sm-9 {
+        margin-left: 74.999997%;
+    }
+
+    .col-laptop-sm-10 {
+        flex-basis: 83.33332999999999%;
+    }
+
+    .col-offset-laptop-sm-10 {
+        margin-left: 83.33332999999999%;
+    }
+
+    .col-laptop-sm-11 {
+        flex-basis: 91.666663%;
+    }
+
+    .col-offset-laptop-sm-11 {
+        margin-left: 91.666663%;
+    }
+
+    .col-laptop-sm-12 {
+        flex-basis: 99.999996%;
+    }
+
+    .col-offset-laptop-sm-12 {
+        margin-left: 99.999996%;
+    }
+
+    .laptop-sm-hidden {
+        display: none !important;
+    }
+}
+
+//tablets
+@media screen and (max-width: 768px) {
+    .col-tablet-1 {
+        flex-basis: 8.333333%;
+    }
+
+    .col-offset-tablet-1 {
+        margin-left: 8.333333%;
+    }
+
+    .col-tablet-2 {
+        flex-basis: 16.666666%;
+    }
+
+    .col-offset-tablet-2 {
+        margin-left: 16.666666%;
+    }
+
+    .col-tablet-3 {
+        flex-basis: 24.999999%;
+    }
+
+    .col-offset-tablet-3 {
+        margin-left: 24.999999%;
+    }
+
+    .col-tablet-4 {
+        flex-basis: 33.333332%;
+    }
+
+    .col-offset-tablet-4 {
+        margin-left: 33.333332%;
+    }
+
+    .col-tablet-5 {
+        flex-basis: 41.666664999999995%;
+    }
+
+    .col-offset-tablet-5 {
+        margin-left: 41.666664999999995%;
+    }
+
+    .col-tablet-6 {
+        flex-basis: 49.999998%;
+    }
+
+    .col-offset-tablet-6 {
+        margin-left: 49.999998%;
+    }
+
+    .col-tablet-7 {
+        flex-basis: 58.333331%;
+    }
+
+    .col-offset-tablet-7 {
+        margin-left: 58.333331%;
+    }
+
+    .col-tablet-8 {
+        flex-basis: 66.666664%;
+    }
+
+    .col-offset-tablet-8 {
+        margin-left: 66.666664%;
+    }
+
+    .col-tablet-9 {
+        flex-basis: 74.999997%;
+    }
+
+    .col-offset-tablet-9 {
+        margin-left: 74.999997%;
+    }
+
+    .col-tablet-10 {
+        flex-basis: 83.33332999999999%;
+    }
+
+    .col-offset-tablet-10 {
+        margin-left: 83.33332999999999%;
+    }
+
+    .col-tablet-11 {
+        flex-basis: 91.666663%;
+    }
+
+    .col-offset-tablet-11 {
+        margin-left: 91.666663%;
+    }
+
+    .col-tablet-12 {
+        flex-basis: 99.999996%;
+    }
+
+    .col-offset-tablet-12 {
+        margin-left: 99.999996%;
+    }
+
+    .tablet-hidden {
+        display: none !important;
+    }
+}
+
+//mobiles
+@media screen and (max-width: 575px) {
+    .col-mobile-1 {
+        flex-basis: 8.333333%;
+    }
+
+    .col-offset-mobile-1 {
+        margin-left: 8.333333%;
+    }
+
+    .col-mobile-2 {
+        flex-basis: 16.666666%;
+    }
+
+    .col-offset-mobile-2 {
+        margin-left: 16.666666%;
+    }
+
+    .col-mobile-3 {
+        flex-basis: 24.999999%;
+    }
+
+    .col-offset-mobile-3 {
+        margin-left: 24.999999%;
+    }
+
+    .col-mobile-4 {
+        flex-basis: 33.333332%;
+    }
+
+    .col-offset-mobile-4 {
+        margin-left: 33.333332%;
+    }
+
+    .col-mobile-5 {
+        flex-basis: 41.666664999999995%;
+    }
+
+    .col-offset-mobile-5 {
+        margin-left: 41.666664999999995%;
+    }
+
+    .col-mobile-6 {
+        flex-basis: 49.999998%;
+    }
+
+    .col-offset-mobile-6 {
+        margin-left: 49.999998%;
+    }
+
+    .col-mobile-7 {
+        flex-basis: 58.333331%;
+    }
+
+    .col-offset-mobile-7 {
+        margin-left: 58.333331%;
+    }
+
+    .col-mobile-8 {
+        flex-basis: 66.666664%;
+    }
+
+    .col-offset-mobile-8 {
+        margin-left: 66.666664%;
+    }
+
+    .col-mobile-9 {
+        flex-basis: 74.999997%;
+    }
+
+    .col-offset-mobile-9 {
+        margin-left: 74.999997%;
+    }
+
+    .col-mobile-10 {
+        flex-basis: 83.33332999999999%;
+    }
+
+    .col-offset-mobile-10 {
+        margin-left: 83.33332999999999%;
+    }
+
+    .col-mobile-11 {
+        flex-basis: 91.666663%;
+    }
+
+    .col-offset-mobile-11 {
+        margin-left: 91.666663%;
+    }
+
+    .col-mobile-12 {
+        flex-basis: 99.999996%;
+    }
+
+    .col-offset-mobile-12 {
+        margin-left: 99.999996%;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+    }
+}

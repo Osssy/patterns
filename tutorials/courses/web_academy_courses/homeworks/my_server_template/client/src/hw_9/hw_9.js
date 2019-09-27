@@ -1,0 +1,13 @@
+import './hw_9.scss';
+import './scripts/randomInteger.js';
+import './scripts/user.js';
+import './scripts/isEmpty.js';
+import './scripts/calc.js';
+import './scripts/salaries-2.js';
+import './scripts/multiplyNumeric.js';
+import './scripts/randomValue.js';
+import './scripts/calc-2.js';
+import './scripts/find.js';
+import './scripts/filterRange.js';
+import './scripts/pow.js';
+import './scripts/date.js';

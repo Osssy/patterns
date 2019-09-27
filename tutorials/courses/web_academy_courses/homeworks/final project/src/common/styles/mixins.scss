@@ -1,0 +1,32 @@
+/*@import 'variables';
+
+
+@mixin pageWrapper {
+  max-width: $max-page-width;
+  margin: 0 auto;
+}
+*/
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absoluteCenterHorizontal {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+

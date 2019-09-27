@@ -1,0 +1,56 @@
+.checkbox {
+	display: none;
+}
+
+.button {
+	text-decoration: underline;
+	margin: 5px;
+	opacity: 1;
+}
+
+.button-red {
+	color: red;
+}
+
+.button-green {
+	color: green;
+}
+
+.button-blue {
+	color: blue;
+}
+
+input:checked + label {
+	opacity: 0.3;
+}
+
+.colors {
+	color: white;
+	border-radius: 5px;
+	padding: 2px 5px;
+	display: inline-block;
+}
+
+.color-red {
+	background: red;
+}
+
+.color-green {
+	background: green;
+}
+
+.color-blue {
+	background: blue;
+}
+
+.checkbox-red:checked ~ .color-red {
+	display: none;
+}
+
+.checkbox-green:checked ~ .color-green {
+	display: none;
+}
+
+.checkbox-blue:checked ~ .color-blue {
+	display: none;
+}

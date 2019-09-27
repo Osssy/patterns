@@ -1,0 +1,67 @@
+.main-background {
+	width: 800px;
+	height: 600px;
+	background: #3598DC;
+	margin: 0 auto;
+	position: relative;
+}
+
+form {
+	background: #FFF;
+	width: 50%;
+	height: 65%;
+	border-radius: 5px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-centering {
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+input, a {
+	display: block;
+	margin: 0 auto;
+}
+
+h1, a {
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	color: #71757E;
+}
+
+h1 {
+	margin: 12% auto 8%;
+	font-size: 36px;
+}
+
+a {
+	margin-top: 5%;
+	font-size: 14px;
+}
+
+input {
+	border: none;
+	border-radius: 2px;
+	width: 90%;
+	height: 16%;
+	text-align: center;
+	margin-bottom: 3%;
+	font-size: 18px;
+}
+
+input[type="text"] {
+	background: #ECF0F1;
+}
+
+input[type="submit"] {
+	background: #3598DC;
+	color: #B7E7FF;
+}

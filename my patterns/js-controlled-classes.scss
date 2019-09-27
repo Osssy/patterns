@@ -1,0 +1,13 @@
+.no-scrolled {
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.hide-mobile {
+    @include mobile {
+        display: none;
+    }
+}

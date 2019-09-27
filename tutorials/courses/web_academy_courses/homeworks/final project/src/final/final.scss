@@ -1,0 +1,43 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import '../common/styles/grid.scss';
+@import '../common/styles/base.scss';
+@import '../common/styles/mixins.scss';
+@import '../common/styles/variables.scss';
+
+@import 'styles/fonts.scss';
+@import 'styles/header.scss';
+@import 'styles/main-page.scss';
+@import 'styles/book-shelf.scss';
+
+.wrapper {
+	display: flex;
+	max-width: 1600px;
+	background-color: #ffddc5;
+	margin: 0 auto;
+}
+
+.book-page {
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+		margin: 1.25%;
+		padding: 1.5625% 5%;
+	  	background-color: #ffffff;
+	}
+	&__header {
+		width: 100%;
+	  	display: flex;
+	  	justify-content: space-between;
+	  	flex-direction: column;
+	  	align-items: center;
+	  	margin-bottom: 3.571%;
+	}
+	&__main-page {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+}

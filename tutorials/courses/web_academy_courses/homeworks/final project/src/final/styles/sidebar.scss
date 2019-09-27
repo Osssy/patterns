@@ -1,0 +1,121 @@
+.sidebar {
+	width: 25.5%;
+	&__readers-preferences {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 14%;
+	}
+	&__books-by-eric-ries {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-bottom: 10.364%;
+	}
+	&__sponsored-books {
+		border-radius: 4px;
+  		background-color: #f8f8f8;
+  		padding: 5.6%;
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: space-between;
+	}
+}
+
+
+.readers-preferences {
+	&__title {
+		font-family: 'Avenir-Heavy', sans-serif;
+		font-size: 1.2857rem;
+		color: #231f20;
+		margin-bottom: 3.922%;
+	}
+	&__books {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		&_book {
+			width: 31.21%;
+			&-img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.books-by-eric-ries {
+	&__title {
+		font-family: 'Avenir-Heavy', sans-serif;
+		font-size: 1.2857rem;
+		color: #231f20;
+		margin-bottom: 3.922%;
+	}
+	&__books {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		&_book {
+			width: 23.58%;
+			&:first-child {
+				width: 21.6%;
+			}
+			&-img {
+				width: 100%;
+			}
+		}
+	}
+	&__view-more {
+		margin-top: 3.081%;
+	}
+}
+
+.sponsored-books {
+	&__title {
+		font-family: 'Avenir-Heavy', sans-serif;
+		font-size: 1.2857rem;
+		color: #231f20;
+		margin-bottom: 6.443%;
+	}
+	&__items {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		&_book {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 9.464%;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+  	}
+}
+
+.sponsored-book {
+	&__logo {
+		width: 15.9%;
+		&-img {
+			width: 100%;
+		}
+	}
+	&__description {
+		width: 79.5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		&_title {
+			font-family: 'Avenir-Medium', sans-serif;
+			font-size: 1.143rem;
+			font-weight: 500;
+			color: #231f20;
+		}
+		&_text {
+			margin: 4.365% 0 1.984%;
+		}
+		&_link {
+			color: #fc9951;
+			text-decoration: underline;
+		}
+	}
+}

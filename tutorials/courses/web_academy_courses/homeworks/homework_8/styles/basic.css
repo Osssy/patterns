@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+    background: url(../assets/images/pattern.jpg);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+}

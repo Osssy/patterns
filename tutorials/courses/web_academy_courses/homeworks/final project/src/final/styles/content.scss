@@ -1,0 +1,347 @@
+.content {
+	width: 68.57%;
+	&__book {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 6.5625%;
+	}
+	&__friends-reviews {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+	&__lists-with-this-book {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+		margin: 3.125% 0 6.25%;
+	}
+	&__community-reviews {
+		display: flex;
+		width: 100%;
+		flex-direction: column;
+	}
+}
+
+.book {
+	&__left-column {
+		width: 26.66%;
+	}
+	&__photo {
+		width: 100%;
+		&-img {
+			width: 100%;
+		}
+	}
+	&__button {
+		width: 96%;
+		margin: 0 auto;
+		border-width: 0;
+		display: flex;
+		justify-content: center;
+		border-radius: 50px;
+		padding: 4.9% 0;
+		background-color: #ededed;
+		cursor: pointer;
+		&_toogle {
+			width: 100%;
+			font-family: 'Avenir-Roman', sans-serif;
+			color: #777274;
+			position: relative;
+		}
+	}
+	&__right-column {
+		width: 69.8%;
+	}
+	&__title {
+		width: 100%;
+		&_main {
+			display: flex;
+			width: 100%;
+			font-family: 'Avenir-Medium', sans-serif;
+			font-weight: 500;
+			font-size: 2.57rem;
+		}
+		&_additional {
+			display: flex;
+			width: 100%;
+			font-size: 1.357rem;
+			margin-bottom: 2.239%;
+		}
+	}
+	&__author {
+		width: 100%;
+		font-size: 1.143rem;
+		color: #777274;
+		display: flex;
+		margin-bottom: 3.582%;
+		&_name {
+			width: 100%;
+			font-size: 1.143rem;
+			color: #777274;
+		}
+	}
+	&__rating {
+		width: 76.5%;
+		margin-bottom: 5.522%;
+		color: #777274;
+		font-size: 1.214rem;
+	  	display: flex;
+	  	justify-content: space-between;
+	}
+	&__annotation {
+		width: 100%;
+	}
+	&__information {
+		width: 100%;
+		margin-top: 2.985%;
+		color: #777274;
+	}
+}
+
+.annotation {
+	&__text {
+		&_normal {
+		}
+		&_bold {
+			font-family: 'Avenir-Medium', sans-serif;
+			font-weight: 500;
+		}
+		&_link {
+			display: flex;
+			width: 100%;
+			margin: 1.492% 0 3.731%;
+		}
+	}
+}
+
+.button {
+	&__toggle {
+		&_chevron-down {
+			font-size: 0.5rem;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.rating-panel {
+	&__numeric-rate {
+		color: #777274;
+	}
+	&__rating-details {
+		color: #fc9951;
+		text-decoration: underline;
+	}
+	&__rating-quantity {
+		color: #fc9951;
+		text-decoration: underline;
+	}
+	&__rating-reviews {
+		color: #fc9951;
+		text-decoration: underline;
+	}
+}
+
+.friends-reviews {
+	&__title {
+		display: flex;
+		width: 100%;
+		margin-bottom: 3.125%;
+		font-family: 'Avenir-Heavy', sans-serif;
+		font-weight: 900;
+		font-size: 1.2857rem;
+		&_quantity {
+			font-family: 'Avenir-Book', sans-serif;
+			font-weight: 400;
+		}
+	}
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 3.125%;
+		&_avatar {
+			width: 6.25%;
+			&-img {
+				width: 100%;
+			}
+		}
+		&_information {
+			width: 92.2%;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.lists-with-this-book {
+	&__header {
+		display: flex;
+		width: 100%;
+		font-family: 'Avenir-Heavy', sans-serif;
+		font-size: 1.2857rem;
+		font-weight: 900;
+	}
+	&__item {
+	}
+	&__view-more {
+		margin-top: 1.042%; 
+	}
+}
+
+.item-list {
+	&__main {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+		padding: 2.083% 0;
+		&_description {
+			display: flex;
+			flex-direction: column;
+			width: 89.583%;
+		}
+		&_voters {
+			display: flex;
+			justify-content: flex-end;
+			width: 10.417%;
+			font-size: 1.1428rem;
+			color: #777274;
+		}
+	}
+}
+
+.book-list {
+	&__name {
+		margin-bottom: 0.581%;
+		&_link {
+			font-size: 1.1428rem;
+			color: #231f20;
+		}
+	}
+	&__rate {
+		font-size: 1.1428rem;
+		color: #777274;
+	}
+}
+
+.community-reviews {
+	&__title {
+		display: flex;
+		width: 100%;
+		font-family: 'Avenir-Heavy', sans-serif;
+		font-size: 1.2857rem;
+		font-weight: 900;
+		margin-bottom: 1.771%;
+	}
+	&__filter {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0.3125% 0;
+	}
+	&__item {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 1.5625% 0;
+	}
+	&__button {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		border-radius: 4px;
+		border-width: 0;
+		padding: 0;
+  		background-color: #f3f3f3;
+  		margin: 1.1458% 0 6.042%;
+  		cursor: pointer;
+  		&_link {
+  			width: 100%;
+  			padding: 2.2395% 0;
+			font-family: 'Avenir-Book', sans-serif;
+			font-size: 1.1428rem;
+			color: #777274;
+  		}
+	}
+}
+
+.community-reviews-filter {
+	&__border {
+		width: 100%;
+	}
+	&__content {
+		width: 98%;
+		display: flex;
+		justify-content: space-between;
+		&_left {
+			width: 15%;
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+}
+
+.filter-content-left {
+	&__filter {
+		&_link {
+			font-family: 'Avenir-Heavy', sans-serif;
+			font-weight: 500;
+			color: #231f20;
+		}
+	}
+	&__sort {
+		&_link {
+			font-family: 'Avenir-Heavy', sans-serif;
+			font-weight: 500;
+			color: #231f20;
+		}
+	}
+}
+
+.sort {
+	&__link {
+		&_default {
+			font-family: 'Avenir-Book', sans-serif;
+			font-weight: 400;
+		}
+	}
+}
+
+.filter-content-right {
+	&__details {
+		&_link {
+			font-family: 'Avenir-Heavy', sans-serif;
+			font-weight: 500;
+			color: #231f20;
+		}
+	}
+}
+
+.community-reviews-item {
+	&__avatar {
+		width: 6.25%;
+		&-img {
+			width: 100%;
+		}
+	}
+	&__text {
+		width: 92%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		&_rating {
+			margin: 1.02% 0;
+		}
+		&_review {
+			margin-bottom: 1.695%;
+		}
+	} 
+}
+			

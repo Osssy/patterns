@@ -1,0 +1,48 @@
+/*custom styles*/
+
+.jq-selectbox__select, .jq-selectbox__select:hover {
+    background: none;
+    padding: 0 45px 0 35px;
+}
+
+.jq-selectbox__trigger {
+    border-left: none;
+}
+
+.jq-selectbox li {
+    padding: 5px 10px 6px 35px;
+}
+
+.jq-selectbox li.selected, .jq-selectbox li:hover {
+    color: #231F20;
+}
+
+.lang-us {
+	background: url('../../assets/images/usa.png') no-repeat 0 7px;
+	background-size: 19px 10px;
+	background-position: 7px;
+}
+
+.lang-de {
+    background: url('../../assets/images/germany.png') no-repeat 0 7px;
+    background-size: 19px 10px;
+    background-position: 7px;
+}
+
+.lang-jp {
+    background: url('../../assets/images/china.png') no-repeat 0 7px;
+    background-size: 19px 10px;
+    background-position: 7px;
+}
+
+.lang-cn {
+    background: url('../../assets/images/japan.png') no-repeat 0 7px;
+    background-size: 19px 10px;
+    background-position: 7px;
+}
+
+.lang-ru {
+    background: url('../../assets/images/russia.png') no-repeat 0 7px;
+    background-size: 19px 10px;
+    background-position: 7px;
+}

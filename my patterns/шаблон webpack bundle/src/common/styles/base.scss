@@ -1,0 +1,54 @@
+//base styles
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: $font-weight-normal;
+    color: $color-text-grey;
+}
+
+body {
+    @extend %padding-margin-reset;
+    max-width: $max-width;
+    height: $full-size;
+    margin: $margin-centered;
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+hr,
+figure {
+    @extend %padding-margin-reset;
+    font-weight: $font-weight-normal;
+}
+
+ul,
+ol {
+    @extend %padding-margin-reset;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-grey;
+}
+
+p {
+    @extend %padding-margin-reset;
+    line-height: $line-height-normal;
+    font-size: $font-size-14px;
+    font-weight: $font-weight-normal;
+}
+
+input,
+button {
+    @extend %border-outline-none;
+    @extend %padding-margin-reset;
+}

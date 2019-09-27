@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    font-family: 'Avenir-Book', sans-serif;
+    font-weight: 400;
+    color: #231f20;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, ul, ol, hr, figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.avatar {
+    border-radius: 50%;
+}
+
+.rating-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &__rates {
+        &_author {
+            font-family: 'Avenir-Medium', sans-serif;
+            font-weight: 500;
+            color: #231f20;
+        }
+    }
+    &__dates {
+        &_date {
+            color: #777274;
+        }
+    }
+}
+
+.static-stars {
+    display: inline-flex;
+    color: #fc9951;
+}
+
+.like-buttons {
+    display: flex;
+    &__likes {
+    }
+    &__like {
+        color: #777274;
+    }
+    &__comment {
+        color: #777274;
+    }
+}
+
+.more-link {
+    color: #fc9951;
+    text-decoration: underline;
+}
+
+.more {
+    display: none;
+}

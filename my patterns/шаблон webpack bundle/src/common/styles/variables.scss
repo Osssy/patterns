@@ -1,0 +1,65 @@
+/* sizes */
+$font-size-4px: 0.285714rem;
+$font-size-5px: 0.357142rem;
+$font-size-6px: 0.428571rem;
+$font-size-7px: 0.5rem;
+$font-size-8px: 0.571428rem;
+$font-size-9px: 0.642857rem;
+$font-size-10px: 0.714285rem;
+$font-size-11px: 0.785714rem;
+$font-size-12px: 0.857142rem;
+$font-size-13px: 0.928571rem;
+$font-size-14px: 1rem;
+$font-size-15px: 1.071428rem;
+$font-size-16px: 1.142857rem;
+$font-size-17px: 1.214285rem;
+$font-size-18px: 1.285714rem;
+$font-size-20px: 1.428571rem;
+$font-size-22px: 1.571428rem;
+$font-size-24px: 1.714285rem;
+$font-size-26px: 1.857142rem;
+$font-size-28px: 2rem;
+$font-size-30px: 2.142857rem;
+$font-size-32px: 2.285714rem;
+$font-size-36px: 2.571428rem;
+$font-size-40px: 2.857142rem;
+$font-size-42px: 3rem;
+$font-size-44px: 3.142857rem;
+$font-size-48px: 3.428571rem;
+$font-size-52px: 3.714285rem;
+$font-size-56px: 4rem;
+$font-size-60px: 4.285714rem;
+$font-size-64px: 4.571428rem;
+$font-size-70px: 5rem;
+$font-size-72px: 5.142857rem;
+$font-size-84px: 6rem;
+
+/* colors */
+$color-bubblegum: #ff65c2;
+$color-white: #ffffff;
+
+$color-background-grey: #fbfbfb;
+$color-background-darken-grey: #f6f6f6;
+$color-background-dark: #565252;
+
+$color-text-grey: #797979;
+$color-text-dark: #868686;
+
+/* font-properties */
+$font-weight-normal: 400;
+
+$line-height-smaller: 1.56;
+$line-height-normal: 2.14;
+$line-height-bigger: 2.21;
+
+/* numerical properties */
+$text-centered: center;
+
+$margin-centered: 0 auto;
+
+$full-size: 100%;
+$max-width: 1600px;
+
+$container-padding: 230px;
+
+$wrapper-width: ($max-width - $container-padding * 2) / $max-width * 100%;

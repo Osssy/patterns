@@ -1,0 +1,82 @@
+//modified base slick styles
+.slick {
+    &-slide {
+        margin: 0px 20px;
+        transition: all ease-in-out .3s;
+        opacity: 1;
+        img {
+            width: 100%;
+        }
+    }
+
+    &-list {
+        padding: 50px 0;
+    }
+
+    &-track {
+        @include flex(flex, row, center, center, nowrap);
+        display: flex !important;
+    }
+
+    &-dots {
+        margin: -50px 0;
+        @include tablet {margin: -30px 0;}
+        & li {
+            @include laptop {width: 18px; height: 18px;}
+            @include tablet {width: 16px; height: 16px;}
+        }
+        & li button {
+            border: 1px solid $color-green;
+            border-radius: 50%;
+            @include laptop {width: 18px; height: 18px;}
+            @include tablet {width: 16px; height: 16px;}
+            &:before {
+                content: '';
+                width: 9px;
+                height: 9px;
+                @extend %absolute-center;
+                background: $color-green;
+                border-radius: 50%;
+                @include laptop {width: 8px; height: 8px;}
+                @include tablet {width: 7px; height: 7px;}
+            }
+        }
+    }
+
+    &-prev, &-next {
+        &:before {
+            content: "";
+            cursor: pointer;
+            width: 25px;
+            height: 25px;
+            transform: rotate(-135deg);
+            @include laptop {width: 22px; height: 22px;}
+            @include tablet {width: 18px; height: 18px;}
+            opacity: 1;
+            @extend %absolute-center-vertical;
+            top: -5px;
+        }
+    }
+
+    &-prev {
+        @include mobile {left: -7px;} 
+        &:before {
+            border-right: 3px solid $color-green;
+            border-top: 3px solid $color-green;
+            right: 0;
+        }
+    }
+
+    &-next {
+        @include mobile {right: -7px;} 
+        &:before {
+            border-left: 3px solid $color-green;
+            border-bottom: 3px solid $color-green;
+            left: 0;
+        }
+    }
+
+    &-active, &-current {
+        opacity: 1;
+    }
+}

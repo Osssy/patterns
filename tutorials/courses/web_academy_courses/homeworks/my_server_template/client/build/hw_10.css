@@ -1,0 +1,36 @@
+.wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.traffic-light {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  background: aqua;
+  width: 150px;
+  height: 450px;
+  border-radius: 5px;
+  border: 2px solid grey; }
+  .traffic-light__block {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: white; }
+
+.light__red_on {
+  background: red; }
+
+.light__orange_on {
+  background: orange; }
+
+.light__green_on {
+  background: green; }
