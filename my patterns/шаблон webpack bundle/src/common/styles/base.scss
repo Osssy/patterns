@@ -3,30 +3,19 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: $font-weight-normal;
-    color: $color-text-grey;
-}
-
-body {
+html, body {
+    font-size: 16px;
     @extend %padding-margin-reset;
-    max-width: $max-width;
-    height: $full-size;
-    margin: $margin-centered;
 }
 
 h1,
 h2,
 h3,
 h4,
-ul,
-ol,
-hr,
-figure {
+h5,
+h6 {
     @extend %padding-margin-reset;
-    font-weight: $font-weight-normal;
+    font-weight: 400;
 }
 
 ul,
@@ -37,14 +26,10 @@ ol {
 
 a {
     text-decoration: none;
-    color: $color-text-grey;
 }
 
 p {
     @extend %padding-margin-reset;
-    line-height: $line-height-normal;
-    font-size: $font-size-14px;
-    font-weight: $font-weight-normal;
 }
 
 input,
