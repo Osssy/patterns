@@ -1,0 +1,141 @@
+.pricing {
+	&_wrapper {
+		text-align: center;
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 75px;
+		@include laptop {padding: 60px 60px;}
+		@include tablet {padding: 45px 45px;}
+		@include mobile {padding: 30px 15px;}
+		@include flex(flex, column, space-between, center, nowrap);
+	}
+	&__title {
+		color: $color-text-dark;
+		font-size: 40px;
+  		font-weight: bold;
+  		line-height: 1.6;
+  		margin: 0 0 60px;
+  		@include laptop {font-size: 36px; margin: 0 0 55px;}
+  		@include tablet {font-size: 32px; margin: 0 0 50px;}
+  		@include mobile {font-size: 30px; margin: 0 0 50px;}
+	}
+	&__terms {
+		margin: 0 0 65px;
+		border-radius: 5px;
+		font-size: 0;
+  		@include laptop {margin: 0 0 55px;}
+  		@include tablet {margin: 0 0 45px;}
+  		@include mobile {margin: 0 0 30px; 
+			@include flex(flex, column, space-between, center, nowrap);
+  		}
+	}
+	&__tab, &__tab_active {
+		font-size: 16px;
+		color: $color-green;
+		background: #f1fff8;
+		cursor: pointer;
+		border: 1px solid transparent;
+		padding: 20px 35px;
+		@include tablet {font-size: 15px; padding: 15px 25px;}
+		@include mobile {font-size: 18px; width: 100%;}
+	}
+	&__tab_active {
+		background: #fff;
+		border: 1px solid #aefdd9;
+		border-radius: 5px;
+	}
+	&-table {
+		&__list {
+			display: none;
+			width: 100%;
+			&_active {
+				@include flex(flex, row, space-between, stretch, nowrap);
+				@include mobile {
+					@include flex(flex, column, space-between, stretch, nowrap);
+				}
+			}
+		}
+		&__item {
+			@include flex(flex, column, space-between, stretch, nowrap);
+			width: calc(378 / 1200 * 100%);
+			padding: 60px 62px 57px;
+			@include laptop {padding: 50px 52px 47px;}
+			@include tablet {padding: 35px 30px 40px;}
+			@include mobile {padding: 20px 15px 25px; width: 100%; margin: 0 0 20px;
+				@include flex(flex, column, space-between, center, nowrap);
+				&:last-child {
+					margin: 0;
+				}
+			}
+			transition-duration: 0.4s;
+			&:hover {
+				background: #fff;
+				box-shadow: 0 7px 24px 0 rgba(83, 83, 83, 0.1),
+							inset 0px 4px 0px 0px #0a8aff;
+			}
+		}
+		&_wrapper {
+			@include flex(flex, column, space-between, stretch, nowrap);
+		}
+	}
+	&-package {
+		&__list {
+
+		}
+		&__title {
+			font-size: 24px;
+  			font-weight: bold;
+  			color: $color-text-dark;
+  			margin: 0 0 20px;
+  			@include tablet {font-size: 22px;}
+  			@include mobile {font-size: 24px;}
+		}
+		&__price {
+			font-size: 72px;
+			color: $color-green;
+			line-height: 1;
+			margin: 0 0 10px;
+			@include laptop {font-size: 60px;}
+			@include tablet {font-size: 52px;}
+		}
+		&__duration {
+			color: $color-text;
+			margin: 0 0 60px;
+			@include laptop {margin: 0 0 50px;}
+			@include tablet {margin: 0 0 35px; font-size: 15px;}
+			@include mobile {font-size: 16px;}
+		}
+		&__button {
+			font-size: 16px;
+  			font-weight: bold;
+			color: #fff;
+			text-transform: uppercase;
+			background: $color-green;
+			padding: 20px 40px;
+			line-height: 1.2;
+			@include laptop {padding: 15px 30px;}
+			@include tablet {padding: 12px 24px; font-size: 15px;}
+			@include mobile {padding: 15px 30px; font-size: 16px; width: 200px;}
+			border-top-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			transition-duration: 0.4s;
+			&:hover {
+				box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+			}
+		}
+	}
+	&-services {
+		&__list {
+			margin: 0 0 60px;
+			@include laptop {margin: 0 0 50px;}
+			@include tablet {margin: 0 0 40px;}
+		}
+		&__item {
+			color: $color-text;
+			margin: 0 0 15px;
+			@include tablet {font-size: 15px;}
+			@include mobile {font-size: 16px; margin: 0 0 10px;}
+		}
+	}
+}

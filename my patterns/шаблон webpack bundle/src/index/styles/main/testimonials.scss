@@ -1,0 +1,195 @@
+.testimonials {
+	@include flex(flex, row, space-between, stretch, nowrap);
+	padding: 100px 0 100px 75px;
+	@include laptop {padding: 85px 0 85px 60px;}
+	@include tablet {padding: 70px 0 70px 45px;}
+	@include mobile {padding: 40px 0 60px 15px;
+		@include flex(flex, column, space-between, stretch, nowrap);
+	}
+	overflow: hidden;
+	&__left-block {
+		max-width: 380px;
+		width: calc(380 / 1295 * 100%);
+		@include mobile {width: auto; margin: 0 0 170px;}
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 30px;
+			width: 0;
+		    height: 200px;
+		    border-left: 150px solid #e9fbf3;
+		    border-bottom: 180px solid transparent;
+		    @include laptop {
+		    	border-left: 135px solid #e9fbf3;
+		    	border-bottom: 160px solid transparent;
+		    }
+		    @include tablet {
+		    	border-left: 110px solid #e9fbf3;
+		    	border-bottom: 130px solid transparent;
+		    }
+		    @include mobile {
+		    	border-left: 90px solid #e9fbf3;
+		    	border-bottom: 110px solid transparent;
+		    }
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			top: 30px;
+			left: 195px;
+			width: 0;
+		    height: 200px;
+		    border-left: 150px solid #e9fbf3;
+		    border-bottom: 180px solid transparent;
+		    @include laptop {
+		    	left: 175px;
+		    	border-left: 135px solid #e9fbf3;
+		    	border-bottom: 160px solid transparent;
+		    }
+		    @include tablet {
+		    	left: 135px;
+		    	border-left: 110px solid #e9fbf3;
+		    	border-bottom: 130px solid transparent;
+		    }
+		    @include mobile {
+		    	left: 115px;
+		    	border-left: 90px solid #e9fbf3;
+		    	border-bottom: 110px solid transparent;
+		    }
+		}
+	}
+	&__right-block {
+		max-width: 810px;
+		background: $color-background-dark; 
+		width: calc(810 / 1295 * 100%);
+		@include mobile {width: auto; margin: 0 0 0 50px;}
+	}
+	&__title {
+  		font-weight: bold;
+  		color: $color-text-dark;
+		padding: 70px 0 0 25px;
+		@include laptop {padding: 60px 0 0 25px;}
+		@include tablet {padding: 50px 0 0 20px; font-size: 22px;}
+		@include mobile {font-size: 24px;}
+		position: relative;
+		z-index: 1;
+	}
+	&-slider {
+		&__list {
+			@include flex(flex, row, space-between, stretch, wrap);
+			margin: 260px -210px 210px !important;
+			@include laptop {margin: 210px -160px 160px !important;}
+			@include tablet {margin: 160px -110px 110px !important;}
+			@include mobile {margin: 70px 0 50px -35px !important;}
+			position: relative;
+		}
+		&__item {
+			@include flex(flex, column, space-between, stretch, nowrap);
+			display: flex !important;
+			background: rgba(255, 255, 255, 0.95);
+			border-radius: 6px;
+			padding: 80px 60px 63px 50px;
+			font-size: 18px;
+			@include laptop {padding: 65px 50px 53px 40px; font-size: 16px;}
+			@include tablet {padding: 55px 40px 43px 30px; font-size: 14px;}
+			@include mobile {padding: 35px 20px 30px; font-size: 15px;}
+			margin: 0 40px 0 0;
+			&:last-child {
+				margin: 0;
+			}
+			&:hover {
+				background: rgba(31, 219, 132, 0.95);
+				box-shadow: 12px 12px 40px 0 rgba(31, 219, 132, 0.5);
+			}
+			&:hover .testimonials-slider_wrapper::before, 
+			&:hover .testimonials-slider_wrapper::after {
+				border-left: 18px solid #fff;
+			    border-bottom: 22px solid transparent;
+			    @include laptop {
+			    	border-left: 15px solid #fff;
+			    	border-bottom: 18px solid transparent;
+			    }
+			    @include tablet {
+			    	border-left: 12px solid #fff;
+			    	border-bottom: 15px solid transparent;
+			    }
+			}
+			&:hover .testimonials-slider__text, 
+			&:hover .testimonials-slider__author, 
+			&:hover .testimonials-slider__company {
+				color: #fff;
+			}
+			&:hover .testimonials-slider__company {
+				opacity: 0.7;
+			}
+		}
+		&_wrapper {
+			position: relative;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+			    height: 22px;
+			    border-left: 18px solid #1fdb84;
+			    border-bottom: 22px solid transparent;
+			    @include laptop {
+			    	border-left: 15px solid #1fdb84;
+			    	border-bottom: 18px solid transparent;
+			    }
+			    @include tablet {
+			    	border-left: 12px solid #1fdb84;
+			    	border-bottom: 15px solid transparent;
+			    }
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 31px;
+				width: 0;
+			    height: 22px;
+			    border-left: 18px solid #1fdb84;
+			    border-bottom: 22px solid transparent;
+			    @include laptop {
+			    	left: 26px;
+			    	border-left: 15px solid #1fdb84;
+			    	border-bottom: 18px solid transparent;
+			    }
+			    @include tablet {
+			    	left: 23px;
+			    	border-left: 12px solid #1fdb84;
+			    	border-bottom: 15px solid transparent;
+			    }
+			}
+		}
+		&__text {
+			margin: 65px 0 45px;
+			@include laptop {margin: 60px 0 40px;}
+			@include tablet {margin: 52px 0 32px;}
+			@include mobile {text-align: justify}
+			position: relative;
+			z-index: 1;
+		}
+		&__info {
+			font-weight: bold;
+			max-width: 80%;
+		}
+		&__author {
+			color: $color-text-dark;
+			margin: 0 15px 0 0;
+			position: relative;
+			&:after {
+				content: '/';
+				position: relative;
+				right: -12px;
+			}
+		}
+		&__company {
+			color: $color-text-dark;
+			opacity: 0.4;
+		}
+	}
+}

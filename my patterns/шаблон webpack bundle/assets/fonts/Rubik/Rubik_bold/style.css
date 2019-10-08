@@ -1,0 +1,11 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Rubik-Bold";
+
+  src: url("./fonts/Rubik-Bold.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/Rubik-Bold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Rubik-Bold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Rubik-Bold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

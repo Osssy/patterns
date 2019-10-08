@@ -1,7 +1,7 @@
-//vendors libs
+// Here will be vendors libs
 import jQuery from 'jquery';
 import slickCarousel from 'slick-carousel-latest';
 
-//libs available through window and global for app
+// Made jquery available through window, make it global for app
 window.$ = jQuery;
 window.slick = slickCarousel;

@@ -1,0 +1,31 @@
+.clients {
+	&_wrapper {
+		@include flex(flex, column, center, center, nowrap);
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 50px 75px;
+		@include laptop {padding: 40px 60px;}
+		@include tablet {padding: 30px 45px;}
+		@include mobile {padding: 20px 15px 100px;}
+	}
+	&__title {
+  		font-weight: bold;
+  		color: $color-text-dark;
+  		margin: 0 0 20px;
+  		@include tablet {margin: 0 0 40px;}
+  		@include mobile {margin: 0 0 40px; font-size: 28px; text-align: center;}
+	}
+	&__list {
+		@include flex(flex, row, space-around, center, wrap);
+		width: 100%;
+	}
+	&__item {
+		width: 15%;
+		@include tablet {width: 26%; margin: 0 0 15px;}
+		@include mobile {width: 80%; max-width: 400px; margin: 0 auto; display: block !important;}
+	}
+	&__image {
+		width: 100%;
+	}
+}

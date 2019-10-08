@@ -1,0 +1,26 @@
+// base styles
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import '~normalize-scss/fork-versions/default/_normalize.scss';
+
+// custom base styles
+@import '../common/styles/variables.scss';
+@import '../common/styles/extensions.scss';
+@import '../common/styles/mixins.scss';
+@import '../common/styles/grid.scss';
+@import '../common/styles/base.scss';
+
+// useful libs styles
+@import '~slick-carousel-latest/slick/slick.css';
+@import '~slick-carousel-latest/slick/slick-theme.css';
+@import '../common/styles/_slick-modified.scss';
+
+// custom styles
+@import 'styles/fonts.scss';
+@import 'styles/header.scss';
+@import 'styles/main.scss';
+@import 'styles/footer.scss';
+@import 'styles/modal_windows.scss';
+
+// js added classes
+@import '../common/styles/js-controlled-classes.scss';

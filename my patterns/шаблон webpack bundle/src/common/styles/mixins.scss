@@ -12,7 +12,7 @@ $laptop-screen: 1169px;
 $tablet-screen: 992px;
 $mobile-screen: 767px;
 
-// media-queries mixins
+//media-queries mixins
 @mixin laptop {
     @media (max-width: #{$laptop-screen}) {
         @content;

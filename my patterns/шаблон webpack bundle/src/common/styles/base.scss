@@ -5,6 +5,8 @@
 
 html, body {
     font-size: 16px;
+    font-family: 'Rubik-Regular', sans-serif;
+    line-height: 2;
     @extend %padding-margin-reset;
 }
 
@@ -16,6 +18,7 @@ h5,
 h6 {
     @extend %padding-margin-reset;
     font-weight: 400;
+    line-height: normal;
 }
 
 ul,
@@ -26,14 +29,17 @@ ol {
 
 a {
     text-decoration: none;
+    color: $color-text;
 }
 
 p {
     @extend %padding-margin-reset;
+    color: $color-text;
 }
 
 input,
 button {
     @extend %border-outline-none;
     @extend %padding-margin-reset;
+    font-family: 'Rubik-Regular', sans-serif;
 }

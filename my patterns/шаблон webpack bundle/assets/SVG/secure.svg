@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="34" viewBox="0 0 40 34">
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#313A5A" transform="translate(-187 -895)" xlink:href="#a"/>
+        <g transform="translate(-95 -85)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+            <rect width="72" height="72" x="79" y="66" fill="#1FDB84" opacity=".1" rx="6"/>
+            <path fill="#1FDB84" fill-rule="nonzero" d="M123 101.2h3.919a7.2 7.2 0 1 1 0-1.6H123a.8.8 0 1 0 0 1.6zm12-13.6v25.6a2.4 2.4 0 0 1-2.4 2.4h-.8v1.6a1.6 1.6 0 0 1-1.6 1.6H127a1.6 1.6 0 0 1-1.6-1.6v-1.6h-20.8v1.6a1.6 1.6 0 0 1-1.6 1.6h-3.2a1.6 1.6 0 0 1-1.6-1.6v-1.6h-.8a2.4 2.4 0 0 1-2.4-2.4V87.6a2.4 2.4 0 0 1 2.4-2.4h35.2a2.4 2.4 0 0 1 2.4 2.4zm-32 28h-3.2v1.6h3.2v-1.6zm0-24.8a.8.8 0 1 0-1.6 0v2.4h-.8a.8.8 0 1 0 0 1.6h.8v4.8h-.8a.8.8 0 1 0 0 1.6h.8v4.8h-.8a.8.8 0 1 0 0 1.6h.8v2.4a.8.8 0 1 0 1.6 0V90.8zm25.6 9.6a8.8 8.8 0 1 0-17.6 0 8.8 8.8 0 0 0 17.6 0zm1.6 15.2H127v1.6h3.2v-1.6z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Autocryp</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <!-- SVG icons -->
+    <svg style="display: none">
+        <symbol id="secure" viewBox="0 0 40 34">
+            <g fill="none" fill-rule="evenodd">
+                <use fill="#313A5A" transform="translate(-187 -895)" xlink:href="#a" />
+                <g transform="translate(-95 -85)">
+                    <use fill="#000" filter="url(#b)" xlink:href="#c" />
+                    <use fill="#FFF" xlink:href="#c" />
+                    <rect width="72" height="72" x="79" y="66" fill="#1FDB84" opacity=".1" rx="6" />
+                    <path fill="#1FDB84" fill-rule="nonzero" d="M123 101.2h3.919a7.2 7.2 0 1 1 0-1.6H123a.8.8 0 1 0 0 1.6zm12-13.6v25.6a2.4 2.4 0 0 1-2.4 2.4h-.8v1.6a1.6 1.6 0 0 1-1.6 1.6H127a1.6 1.6 0 0 1-1.6-1.6v-1.6h-20.8v1.6a1.6 1.6 0 0 1-1.6 1.6h-3.2a1.6 1.6 0 0 1-1.6-1.6v-1.6h-.8a2.4 2.4 0 0 1-2.4-2.4V87.6a2.4 2.4 0 0 1 2.4-2.4h35.2a2.4 2.4 0 0 1 2.4 2.4zm-32 28h-3.2v1.6h3.2v-1.6zm0-24.8a.8.8 0 1 0-1.6 0v2.4h-.8a.8.8 0 1 0 0 1.6h.8v4.8h-.8a.8.8 0 1 0 0 1.6h.8v4.8h-.8a.8.8 0 1 0 0 1.6h.8v2.4a.8.8 0 1 0 1.6 0V90.8zm25.6 9.6a8.8 8.8 0 1 0-17.6 0 8.8 8.8 0 0 0 17.6 0zm1.6 15.2H127v1.6h3.2v-1.6z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="easier" viewBox="0 0 40 32">
+            <g fill="none" fill-rule="evenodd">
+                <use fill="#313A5A" transform="translate(-587 -896)" xlink:href="#a" />
+                <g transform="translate(-495 -86)">
+                    <use fill="#000" filter="url(#b)" xlink:href="#c" />
+                    <use fill="#FFF" xlink:href="#c" />
+                    <rect width="72" height="72" x="479" y="66" fill="#1FDB84" opacity=".1" rx="6" />
+                    <path fill="#1FDB84" fill-rule="nonzero" d="M532.6 86.8h-35.2a2.403 2.403 0 0 0-2.4 2.4v25.6a2.403 2.403 0 0 0 2.4 2.4h4l4.08-5.44a2.4 2.4 0 0 1 1.92-.96h15.2a2.4 2.4 0 0 1 1.92.96l4.08 5.44h4a2.403 2.403 0 0 0 2.4-2.4V89.2a2.403 2.403 0 0 0-2.4-2.4zm-30.4 20.8H499a.8.8 0 1 1 0-1.6h3.2a.8.8 0 1 1 0 1.6zm0-6.4H499a.8.8 0 1 1 0-1.6h3.2a.8.8 0 1 1 0 1.6zm0-6.4H499a.8.8 0 1 1 0-1.6h3.2a.8.8 0 1 1 0 1.6zm21.6 11.2a1.6 1.6 0 0 1-1.6 1.6h-14.4a1.6 1.6 0 0 1-1.6-1.6V94.8a1.6 1.6 0 0 1 1.6-1.6h14.4a1.6 1.6 0 0 1 1.6 1.6V106zm7.2 1.6h-3.2a.8.8 0 1 1 0-1.6h3.2a.8.8 0 1 1 0 1.6zm0-6.4h-3.2a.8.8 0 1 1 0-1.6h3.2a.8.8 0 1 1 0 1.6zm0-6.4h-3.2a.8.8 0 1 1 0-1.6h3.2a.8.8 0 1 1 0 1.6zm-7.76 17.92l2.16 2.88h-20.8l2.16-2.88a.803.803 0 0 1 .64-.32h15.2c.252 0 .489.119.64.32z" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="faster" viewBox="0 0 39 26">
+            <path fill="#1FDB84" fill-rule="nonzero" d="M39 12a5.972 5.972 0 0 1-.534 2.4H1.134a5.657 5.657 0 0 1 0-4.8h37.332c.342.754.524 1.572.534 2.4zM2.076 16h35.448c-2.894 3.758-9.738 6.4-17.724 6.4a34.307 34.307 0 0 1-5.897-.503L11.8 24H1.4a.8.8 0 1 1 0-1.6h2.4l2.139-3.209A12.754 12.754 0 0 1 2.076 16zm5.301 3.92L5.723 22.4h5.414l.895-.895a25.213 25.213 0 0 1-4.655-1.586zM27 24h-6.4a.8.8 0 1 0 0 1.6H27a.8.8 0 1 0 0-1.6zM.6.8a.8.8 0 0 1 .8-.8h10.4l2.103 2.103A34.307 34.307 0 0 1 19.8 1.6c7.986 0 14.83 2.642 17.724 6.4H2.076A12.754 12.754 0 0 1 5.94 4.809L3.8 1.6H1.4A.8.8 0 0 1 .6.8zm5.123.8l1.654 2.48a25.213 25.213 0 0 1 4.655-1.586l-.895-.894H5.723z" />
+        </symbol>
+    </svg>
+    <!-- header section -->
+    <header class="header">
+        <div class="header_wrapper">
+            <div class="header__upper-block">
+                <a href="#home" class="header__logo">autocryp</a>
+                <ul class="header__navigation navigation">
+                    <li class="navigation__item"><a href="#benefits" class="navigation__link">Benefit</a></li>
+                    <li class="navigation__item"><a href="#pricing" class="navigation__link">Pricing</a></li>
+                    <li class="navigation__item"><a href="#testimonials" class="navigation__link">Testimonials</a></li>
+                    <li class="navigation__item"><a href="#clients" class="navigation__link">Client</a></li>
+                </ul>
+                <a class="navigation__toggle" href="#nowhere">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="header__check-in">
+                    <a class="header__login" href="#nowhere">Login</a>
+                    <a class="header__register" href="#nowhere">Register</a>
+                </div>
+            </div>
+            <div class="header__main-block">
+                <div class="header__info">
+                    <h1 class="header__title">Easiest way to mining your bitcoin</h1>
+                    <p class="header__text">Autocryp is the place to buy and sell Bitcoin, Ethereum and various kinds of Digital Assets in Indonesia. Then, book your weekly, bi-weekly or one-off clean online with imminent confirmation.</p>
+                    <a class="header__bitcoin" href="#bitcoin.html">Get Started</a>
+                </div>
+                <img src="../../assets/images/mobile-bitcoin.png" alt="mobile-bitcoin" class="header__image">
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <!-- benefits section -->
+        <section class="benefits" id="benefits">
+            <div class="benefits_wrapper">
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        <div class="benefits__icon_container">
+                            <svg class="benefits__icon benefits_secure">
+                                <use xlink:href="#secure"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Secure Every Transaction</h3>
+                        <hr class="benefits__horizontal">
+                        <p class="benefits__text">Your account is protected by Multifactor Authentication using a combination of email, SMS and Google Authenticator.</p>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__icon_container">
+                            <svg class="benefits__icon benefits_easier">
+                                <use xlink:href="#easier"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Easiest To Use</h3>
+                        <hr class="benefits__horizontal">
+                        <p class="benefits__text">You only need 1 account to do all Bitcoin transactions whether it is buying, selling, investing or trading.</p>
+                    </li>
+                    <li class="benefits__item">
+                        <div class="benefits__icon_container">
+                            <svg class="benefits__icon benefits_faster">
+                                <use xlink:href="#faster"></use>
+                            </svg>
+                        </div>
+                        <h3 class="benefits__title">Fastest Mining</h3>
+                        <hr class="benefits__horizontal">
+                        <p class="benefits__text">The Rupiah deposit can be processed instantly and Rupiah withdrawal is processed in less than 1 business day.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- pricing section -->
+        <section class="pricing" id="pricing">
+            <div class="pricing_wrapper">
+                <h2 class="pricing__title">Paid plan starts with a 7-day free trial, No credit card required</h2>
+                <div class="pricing__terms">
+                    <button class="pricing__tab pricing__tab_active">Monthly</button>
+                    <button class="pricing__tab">Yearly - 2 Month Free</button>
+                </div>
+                <ul class="pricing-table__list pricing-table__list_active">
+                    <li class="pricing-table__item">
+                        <ul class="pricing-table_wrapper pricing-package__list">
+                            <li class="pricing-package__title">Starter</li>
+                            <li class="pricing-package__price">$10</li>
+                            <li class="pricing-package__duration">Per Month</li>
+                            <li class="pricing-package__services pricing-services">
+                                <ul class="pricing-services__list">
+                                    <li class="pricing-services__item">1 Pixel ID*</li>
+                                    <li class="pricing-services__item">URL</li>
+                                    <li class="pricing-services__item">Up to 200 shortened links / month</li>
+                                </ul>
+                        </ul>
+                        <a class="pricing-package__button" href="#nowhere">Start free trial</a>
+                    </li>
+                    <li class="pricing-table__item">
+                        <ul class="pricing-table_wrapper pricing-package__list">
+                            <li class="pricing-package__title">Professional</li>
+                            <li class="pricing-package__price">$29</li>
+                            <li class="pricing-package__duration">Per Month</li>
+                            <li class="pricing-package__services pricing-services">
+                                <ul class="pricing-services__list">
+                                    <li class="pricing-services__item">5 Pixels ID*</li>
+                                    <li class="pricing-services__item">1 Custom URL</li>
+                                    <li class="pricing-services__item">Up to 1,000 shortened links / month</li>
+                                    <li class="pricing-services__item">5 Team Member</li>
+                                </ul>
+                        </ul>
+                        <a class="pricing-package__button" href="#nowhere">Start free trial</a>
+                    </li>
+                    <li class="pricing-table__item">
+                        <ul class="pricing-table_wrapper pricing-package__list">
+                            <li class="pricing-package__title">Business</li>
+                            <li class="pricing-package__price">$49</li>
+                            <li class="pricing-package__duration">Per Month</li>
+                            <li class="pricing-package__services pricing-services">
+                                <ul class="pricing-services__list">
+                                    <li class="pricing-services__item">Unlimited Pixels ID</li>
+                                    <li class="pricing-services__item">Unlimited Custom URL</li>
+                                    <li class="pricing-services__item">Unlimited shortened links</li>
+                                    <li class="pricing-services__item">Unlimited Member</li>
+                                </ul>
+                        </ul>
+                        <a class="pricing-package__button" href="#nowhere">Start free trial</a>
+                    </li>
+                </ul>
+                <ul class="pricing-table__list">
+                    <li class="pricing-table__item">
+                        <ul class="pricing-table_wrapper pricing-package__list">
+                            <li class="pricing-package__title">Starter</li>
+                            <li class="pricing-package__price">$100</li>
+                            <li class="pricing-package__duration">Per Year</li>
+                            <li class="pricing-package__services pricing-services">
+                                <ul class="pricing-services__list">
+                                    <li class="pricing-services__item">1 Pixel ID*</li>
+                                    <li class="pricing-services__item">URL</li>
+                                    <li class="pricing-services__item">Up to 200 shortened links / month</li>
+                                </ul>
+                        </ul>
+                        <a class="pricing-package__button" href="#nowhere">Start free trial</a>
+                    </li>
+                    <li class="pricing-table__item">
+                        <ul class="pricing-table_wrapper pricing-package__list">
+                            <li class="pricing-package__title">Professional</li>
+                            <li class="pricing-package__price">$290</li>
+                            <li class="pricing-package__duration">Per Year</li>
+                            <li class="pricing-package__services pricing-services">
+                                <ul class="pricing-services__list">
+                                    <li class="pricing-services__item">5 Pixels ID*</li>
+                                    <li class="pricing-services__item">1 Custom URL</li>
+                                    <li class="pricing-services__item">Up to 1,000 shortened links / month</li>
+                                    <li class="pricing-services__item">5 Team Member</li>
+                                </ul>
+                        </ul>
+                        <a class="pricing-package__button" href="#nowhere">Start free trial</a>
+                    </li>
+                    <li class="pricing-table__item">
+                        <ul class="pricing-table_wrapper pricing-package__list">
+                            <li class="pricing-package__title">Business</li>
+                            <li class="pricing-package__price">$490</li>
+                            <li class="pricing-package__duration">Per Year</li>
+                            <li class="pricing-package__services pricing-services">
+                                <ul class="pricing-services__list">
+                                    <li class="pricing-services__item">Unlimited Pixels ID</li>
+                                    <li class="pricing-services__item">Unlimited Custom URL</li>
+                                    <li class="pricing-services__item">Unlimited shortened links</li>
+                                    <li class="pricing-services__item">Unlimited Member</li>
+                                </ul>
+                        </ul>
+                        <a class="pricing-package__button" href="#nowhere">Start free trial</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- testimonials section -->
+        <section class="testimonials" id="testimonials">
+            <div class="testimonials__left-block">
+                <h2 class="testimonials__title">What Customers Say</h2>
+            </div>
+            <div class="testimonials__right-block testimonials-slider">
+                <ul class="testimonials-slider__list">
+                    <li class="testimonials-slider__item">
+                        <div class="testimonials-slider_wrapper">
+                            <p class="testimonials-slider__text">"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+                            <div class="testimonials-slider__info">
+                                <span class="testimonials-slider__author">Brandon Roger</span>&nbsp;
+                                <span class="testimonials-slider__company">OWW Studio</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-slider__item">
+                        <div class="testimonials-slider_wrapper">
+                            <p class="testimonials-slider__text">"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+                            <div class="testimonials-slider__info">
+                                <span class="testimonials-slider__author">Brandon Roger</span>&nbsp;
+                                <span class="testimonials-slider__company">OWW Studio</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-slider__item">
+                        <div class="testimonials-slider_wrapper">
+                            <p class="testimonials-slider__text">"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+                            <div class="testimonials-slider__info">
+                                <span class="testimonials-slider__author">Brandon Roger</span>&nbsp;
+                                <span class="testimonials-slider__company">OWW Studio</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-slider__item">
+                        <div class="testimonials-slider_wrapper">
+                            <p class="testimonials-slider__text">"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+                            <div class="testimonials-slider__info">
+                                <span class="testimonials-slider__author">Brandon Roger</span>&nbsp;
+                                <span class="testimonials-slider__company">OWW Studio</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="testimonials-slider__item">
+                        <div class="testimonials-slider_wrapper">
+                            <p class="testimonials-slider__text">"I started driving with Uber because I liked the idea that my own car could make me money. After just about a couple weeks, I saw that this was something I wanted to do permanently."</p>
+                            <div class="testimonials-slider__info">
+                                <span class="testimonials-slider__author">Brandon Roger</span>&nbsp;
+                                <span class="testimonials-slider__company">OWW Studio</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- clients section -->
+        <section class="clients" id="clients">
+            <div class="clients_wrapper">
+                <h2 class="clients__title">Works With Any Platform</h2>
+                <ul class="clients__list">
+                    <li class="clients__item"><img src="../../assets/images/amazon.png" alt="amazon" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/etsy.png" alt="etsy" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/clickbank.png" alt="clickbank" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/youtube.png" alt="youtube" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/kickstarter.png" alt="kickstarter" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/amazon.png" alt="amazon" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/etsy.png" alt="etsy" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/clickbank.png" alt="clickbank" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/youtube.png" alt="youtube" class="clients__image"></li>
+                    <li class="clients__item"><img src="../../assets/images/kickstarter.png" alt="kickstarter" class="clients__image"></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer_wrapper">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#benefits" class="footer__link">Benefit</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#pricing" class="footer__link">Pricing</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#testimonials" class="footer__link">Testimonials</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#clients" class="footer__link">Client</a>
+                </li>
+            </ul>
+            <div class="footer__additional">
+                <span class="footer__copyright">&copy; 2018 autocryp. All Right Reserved.</span>
+            </div>
+        </div>
+    </footer>
+    <!-- modal window -->
+    <div class="modal__window hide">
+        <form class="form__login hide" action="#" method="post">
+            <a class="form__close" href="#nowhere">
+                <i class="fa fa-close"></i>
+            </a>
+            <div class="form_container">
+                <div class="form__username">
+                    <label for="login_uname">Username</label>
+                    <input type="text" name="uname" id="login_uname" tabindex="1" placeholder="Enter Name" required />
+                </div>
+                <div class="form__password">
+                    <label for="login_psw">Password</label>
+                    <input type="password" name="password" id="login_psw" tabindex="2" placeholder="Enter Password" required />
+                </div>
+                <label class="form__remember" for="login_remember">
+                    <input type="checkbox" name="remember" id="login_remember" />
+                    <span class="form__checkmark"></span>
+                    Remember me
+                </label>
+                <button class="form__submit" type="submit">Login</button>
+            </div>
+        </form>
+        <form class="form__register hide" action="#" method="post">
+            <div class="form_container">
+                <div class="form__email">
+                    <label for="registration_email">E-mail</label>
+                    <input type="text" name="email" id="registration_email" tabindex="1" placeholder="Enter E-mail" required />
+                </div>
+                <div class="form__password">
+                    <label for="registration_psw">Password</label>
+                    <input type="password" name="password" id="registration_psw" tabindex="2" placeholder="Enter Password" required />
+                </div>
+                <div class="form__password">
+                    <label for="registration_pswrpt">Repeat Password</label>
+                    <input type="password" name="password-repeat" id="registration_pswrpt" tabindex="2" placeholder="Repeat Password" required />
+                </div>
+                <label class="form__remember" for="registration_remember">
+                    <input type="checkbox" name="remember" id="registration_remember" />
+                    <span class="form__checkmark"></span>
+                    Remember me
+                </label>
+                <label class="form__privacy" for="registration_privacy">
+                    <input type="checkbox" name="privacy" id="registration_privacy" required />
+                    <span class="form__checkmark"></span>
+                    <span>By creating an account you agree to our
+                        <a class="form__privacy_link" href="#nowhere">Terms & Privacy</a>.
+                    </span>
+                </label>
+                <div class="form__buttons">
+                    <button class="form__cancel" type="submit">Cancel</button>
+                    <button class="form__submit" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </form>
+        <form class="form__free-trial hide" action="#" method="post">
+            <a class="form__close" href="#nowhere">
+                <i class="fa fa-close"></i>
+            </a>
+            <div class="form_container">
+                <h3 class="form__header">Start a 7-Day Free Trial</h3>
+                <div class="form__name">
+                    <div class="form__name_container ">
+                        <label for="free-trial_first-name">First Name</label>
+                        <input type="text" name="first-name" id="free-trial_first-name" tabindex="1" placeholder="Enter First Name" required />
+                    </div>
+                    <div class="form__name_container ">
+                        <label for="free-trial_last-name">Last Name</label>
+                        <input type="text" name="last-name" id="free-trial_last-name" tabindex="2" placeholder="Enter Last Name" />
+                    </div>
+                </div>
+                <div class="form__email">
+                    <label for="free-trial-email">E-mail</label>
+                    <input type="text" name="free-trial_email" id="free-trial-email" tabindex="3" placeholder="Enter E-mail" required />
+                </div>
+                <div class="form__data">
+                    <div class="form__data_container">
+                        <label for="free-trial_phone">Phone</label>
+                        <input id="free-trial_phone" name="phone" type="tel" tabindex="4" placeholder="Enter Phone Number">
+                    </div>
+                    <div class="form__data_container">
+                        <label for="free-trial_company">Company</label>
+                        <input id="free-trial_company" name="company" type="text" tabindex="5" placeholder="Enter Your Company">
+                    </div>
+                </div>
+                <label class="form__remember" for="free-trial_remember">
+                    <input type="checkbox" name="remember" id="free-trial_remember" />
+                    <span class="form__checkmark"></span>
+                    Remember me
+                </label>
+                <label class="form__privacy" for="free-trial_privacy">
+                    <input type="checkbox" name="privacy" id="free-trial_privacy" required />
+                    <span class="form__checkmark"></span>
+                    <span>By creating an account you agree to our
+                        <a class="form__privacy_link" href="#nowhere">Terms & Privacy</a>.
+                    </span>
+                </label>
+                <button class="form__submit" type="submit">Create My Account</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

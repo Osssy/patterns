@@ -1,0 +1,154 @@
+.header {
+	background: $color-background-dark;
+	color: #fff;
+	&_wrapper {
+		width: 100%;
+		max-width: 1170px;
+		margin: 0 auto;
+		padding: 35px 75px 0;
+		@include laptop {padding: 35px 60px 0;}
+		@include tablet {padding: 35px 45px 0;}
+		@include mobile {padding: 35px 15px 0;}
+	}
+	&__upper-block {
+		@include flex(flex, row, space-between, stretch, nowrap);
+		margin: 0 0 50px;
+		@include laptop {margin: 0 0 40px;}
+		@include tablet {margin: 0 0 30px;}
+		@include mobile {margin: 0 0 40px;
+			@include flex(flex, column, space-between, center, nowrap);
+		}
+	}
+	&__logo {
+		font-size: 26px;
+  		font-weight: 500;
+		color: #fff;
+		text-align: center;
+		@include tablet {font-size: 22px;}
+		@include mobile {font-size: 32px; margin: 0 0 20px; display: inline-block; width: 100%;}
+	}
+	&__navigation {
+		
+	}
+	&__item {
+
+	}
+	&__link {
+
+	}
+	&__check-in {
+		@include flex(flex, row, space-between, center, nowrap);
+		min-width: 250px;
+		@include laptop {min-width: auto;}
+		@include mobile {width: 100%;
+			@include flex(flex, row, space-around, center, nowrap);
+		}
+	}
+	&__login, &__register {
+		color: #fff;
+		font-size: 16px;
+		padding: 10px 25px;
+		background: transparent;
+		line-height: 1.2;
+		text-align: center;
+		@include tablet {font-size: 15px; padding: 6px 15px;}
+		@include mobile {font-size: 20px; padding: 10px 25px; width: 48%;}
+		&:hover {
+			box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+  			background: $color-green;
+		}
+	}
+	&__login {
+		border-top-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+	&__register {
+		border-top-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+	}
+	&__main-block {
+		@include flex(flex, row, space-between, center, nowrap);
+		@include mobile {
+			@include flex(flex, column-reverse, space-between, center, nowrap);
+		}
+	}
+	&__info {
+		@include flex(flex, column, flex-start, flex-start, nowrap);
+		width: calc(550 / 1250 * 100%);
+		@include mobile {width: 100%; margin: 0 0 100px;
+			@include flex(flex, column, flex-start, center, nowrap);
+		}
+	}
+	&__title {
+		font-size: 48px;
+		margin: 0 0 40px;
+		@include laptop {font-size: 42px; margin: 0 0 35px;}
+		@include tablet {font-size: 32px; margin: 0 0 20px;}
+		@include mobile {text-align: center;}
+	}
+	&__text {
+		color: #fff;
+		margin: 0 0 50px;
+		@include laptop {margin: 0 0 45px;}
+		@include tablet {margin: 0 0 30px; font-size: 15px;}
+		@include mobile {text-align: justify;}
+	}
+	&__bitcoin {
+		color: #fff;
+		font-size: 18px;
+  		font-weight: bold;
+		padding: 20px 45px;
+		background: transparent; 
+		border-top-left-radius: 12px;
+		border-bottom-right-radius: 12px;
+		line-height: 1.2;
+  		background: $color-green;
+  		@include tablet {padding: 15px 35px; font-size: 16px;}
+  		&:hover {
+			box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+		}
+	}
+	&__image {
+		width: calc(465 / 1250 * 100%);
+		@include mobile {width: 80%; max-width: 450px; margin: 0 0 35px;}
+	}
+}
+
+.navigation {
+	@include flex(flex, row, space-between, center, nowrap);
+	min-width: 400px;
+	@include laptop {min-width: auto;}
+	@include mobile {width: 100%;
+		@include flex(flex, column, space-between, stretch, nowrap);
+	}
+	&__item {
+		@include tablet {font-size: 14px;}
+		@include mobile {font-size: 16px; display: none;} 
+	}
+	&__link {
+		display: block;
+		color: #fff;
+		padding: 5px 15px;
+		border-top-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		line-height: 1.2;
+		text-align: center;
+		@include tablet {padding: 4px 12px;}
+		@include mobile {padding: 8px 16px; margin: 0 0 15px; width: 100%;}
+		&:hover {
+			box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+  			background: $color-green;
+		}
+	}
+	&__toggle {
+		display: none;
+		text-align: center;
+		width: 100%;
+		color: #fff;
+		font-size: 26px;
+		margin: 0 0 15px;
+		border-top-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+		@include mobile {display: inline-block;}
+	}
+}

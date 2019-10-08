@@ -1,0 +1,10 @@
+//main sections
+.content {
+	background: $color-background;
+	position: relative;
+}
+
+@import 'main/benefits.scss';
+@import 'main/pricing.scss';
+@import 'main/testimonials.scss';
+@import 'main/clients.scss';

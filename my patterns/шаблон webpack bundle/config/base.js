@@ -90,7 +90,7 @@ const baseConf = (_path) => {
                     loader: 'file-loader?publicPath=./&name=assets/images/[name].[ext]'
                 },
                 {
-                    test: /\.(eot|ttf|woff|woff2|svg)$/,
+                    test: /\.(eot|ttf|woff|woff2)$/,
                     loader: 'file-loader?publicPath=./&name=assets/fonts/[name].[ext]'
                 }
             ]

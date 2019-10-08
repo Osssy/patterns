@@ -1,0 +1,164 @@
+// modal windows
+
+.modal__window {
+	@include flex(flex, row, center, center, nowrap);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: $color-background-dark;
+	position: fixed;
+	z-index: 10;
+	overflow-y: auto;
+}
+
+.form {
+	&__login, &__register, &__free-trial {
+		position: relative;
+		color: #fff;
+		height: 100%;
+		width: 100%;
+	}
+	&__close {
+		position: absolute;
+	    font-size: 30px;
+        color: #fff;
+        top: 20px;
+        right: 20px;
+        @include mobile {top: 15px; right: 15px; font-size: 20px;}
+        line-height: 0;
+       	&:hover {
+	        color: $color-green;
+	    }
+	}
+	&_container {
+		@include flex(flex, column, flex-start, stretch, nowrap);
+		padding: 50px 40px;
+		@include mobile {padding: 40px 20px 30px;}
+	}
+	&__header {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 25px;
+		margin: 0 0 25px;
+		@include mobile {margin: 0 0 15px; font-size: 20px;}
+	}
+	&__username, &__password, &__email {
+		@include flex(flex, column, flex-start, stretch, nowrap);
+		margin: 0 0 25px;
+		@include mobile {margin: 0 0 15px;}
+		& label {
+			@include mobile {font-size: 15px;}
+		}
+		& input {
+			padding: 15px;
+			@include mobile {padding: 12px;}
+			&::placeholder {
+				font-size: 14px;
+				@include mobile {font-size: 11px;}
+			}
+		}
+	}
+	&__name, &__data {
+		@include flex(flex, row, space-between, stretch, nowrap);
+		margin: 0 0 25px;
+		@include mobile {margin: 0 0 15px;}
+		&_container {
+			@include flex(flex, column, flex-start, stretch, nowrap);
+			width: 48%;
+			& label {
+				@include mobile {font-size: 15px;}
+			}
+			& input {
+				padding: 15px;
+				@include mobile {padding: 12px;}
+				&::placeholder {
+					font-size: 14px;
+					@include mobile {font-size: 11px;}
+				}
+			}
+		}
+	}
+	&__remember, &__privacy {
+		@include flex(flex, row, flex-start, stretch, nowrap);
+		position: relative;
+		padding: 0 0 0 35px;
+		cursor: pointer;
+		margin: 0 0 25px;
+		@include mobile {margin: 0 0 15px; font-size: 14px;}
+		&:hover input ~ .form__checkmark {
+			background: darken($color-background, 30%);
+		}
+		& input {
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+			height: 0;
+			width: 0;
+			&:checked ~ .form__checkmark {
+				background: $color-green;
+				box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+				&:after {
+					display: block;
+				}
+			}
+		}
+		.form__checkmark:after {
+			left: 9px;
+			top: 5px;
+			width: 5px;
+			height: 10px;
+			border: solid $color-background;
+			border-width: 0 3px 3px 0;
+			transform: rotate(45deg);
+		}
+	}
+	&__privacy {
+		&_link {
+			display: inline-block;
+			&:hover {
+				color: lighten($color-text, 20%);
+			}
+		}
+	}
+	&__checkmark {
+		width: 25px;
+		height: 25px;
+		border-top-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+		background: $color-background;
+		position: absolute;
+		left: 0;
+		&:after {
+			content: "";
+			position: absolute;
+			display: none;
+		}
+	}
+	&__buttons {
+		@include flex(flex, row, space-between, stretch, nowrap);
+	}
+	&__submit, &__cancel {
+		flex-basis: 48%;
+		color: #fff;
+		font-size: 16px;
+		text-transform: uppercase;
+		padding: 15px;
+		background: $color-green;
+		border-top-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+	&__submit {
+		background: $color-green;
+		&:hover, &:active {
+			box-shadow: 0 8px 34px 0 rgba(31, 219, 132, 0.6);
+		}
+	}
+
+	&__cancel {
+		background: #fd5869;
+		&:hover, &:active {
+			box-shadow: 0 8px 34px 0 rgba(253, 88, 105, 0.6);;
+		}
+	}
+}
